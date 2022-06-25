@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vtrevisa <vtrevisa@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: vitor <vitor@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/12 01:07:35 by vtrevisa          #+#    #+#             */
-/*   Updated: 2022/06/15 02:59:02 by vtrevisa         ###   ########.fr       */
+/*   Updated: 2022/06/25 15:31:16 by vitor            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static char	ft_countdigit(int n)
+char	countdigit(int n)
 {
 	int	nb;
 	int	result;
@@ -58,7 +58,7 @@ char	*ft_itoa(int n)
 
 	if (n == -2147483648)
 		return (ft_strdup ("-2147483648"));
-	dig = ft_countdigit(n);
+	dig = countdigit(n);
 	str = malloc (dig + 1);
 	if (!str)
 		return (NULL);
