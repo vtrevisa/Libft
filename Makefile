@@ -13,23 +13,16 @@ OBJB	= $(BONUS:.c=.o)
 
 OBJS	= $(SRC:.c=.o)
 
-FLAG	= -Wall -Wextra -Werror
-
-INCL	= -c -I.
+CFLAGS	= -Wall -Wextra -Werror
 
 all:	$(NAME)
 
 ${NAME}: $(OBJS)
 	ar -rcs $(NAME) $(OBJS)
 
-$(OBJS): $(SRC)
-	gcc ${FLAG} ${INCL} ${SRC}
+bonus:
+	@make OBJS="$(OBJS) $(OBJB)" all
 
-bonus: $(OBJB)
-	ar -rcs $(NAME) $(OBJS) $(OBJB)
-
-$(OBJB): $(BONUS)
-	gcc ${FLAG} ${INCL} ${SRC} $(BONUS)
 clean:
 	rm -f ${OBJS} $(OBJB)
 
