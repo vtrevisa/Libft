@@ -6,12 +6,13 @@
 /*   By: vitor <vitor@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/20 23:14:48 by vtrevisa          #+#    #+#             */
-/*   Updated: 2022/06/23 19:32:46 by vitor            ###   ########.fr       */
+/*   Updated: 2022/06/26 15:31:58 by vitor            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
+
 # include <stdlib.h>
 # include <unistd.h>
 

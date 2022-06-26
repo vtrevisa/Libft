@@ -6,13 +6,13 @@
 /*   By: vitor <vitor@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/12 01:07:35 by vtrevisa          #+#    #+#             */
-/*   Updated: 2022/06/25 15:31:16 by vitor            ###   ########.fr       */
+/*   Updated: 2022/06/25 16:52:05 by vitor            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	countdigit(int n)
+static char	countdigit(int n)
 {
 	int	nb;
 	int	result;
@@ -34,7 +34,7 @@ char	countdigit(int n)
 	return (result);
 }
 
-void	makestr(int n, char *str, int position)
+static void	makestr(int n, char *str, int position)
 {
 	if (n < 0)
 	{

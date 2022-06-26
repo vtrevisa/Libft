@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vtrevisa <vtrevisa@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: vitor <vitor@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/12 01:13:43 by vtrevisa          #+#    #+#             */
-/*   Updated: 2022/06/16 02:23:19 by vtrevisa         ###   ########.fr       */
+/*   Updated: 2022/06/26 15:04:59 by vitor            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,6 +58,8 @@ char	**ft_split(char const *s, char c)
 	int		pos1;
 	char	**nstr;
 
+	if (!s)
+		return (NULL);
 	pos1 = 0;
 	nstr = malloc (sizeof(char *) * ((countword(s, c)) + 1));
 	if (!nstr)

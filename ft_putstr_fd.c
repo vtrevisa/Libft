@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vtrevisa <vtrevisa@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: vitor <vitor@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/20 00:04:19 by vtrevisa          #+#    #+#             */
-/*   Updated: 2022/06/20 00:04:22 by vtrevisa         ###   ########.fr       */
+/*   Updated: 2022/06/26 15:07:53 by vitor            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,7 @@
 
 void	ft_putstr_fd(char *s, int fd)
 {
+	if (!s)
+		return ;
 	write(fd, s, ft_strlen(s));
 }
