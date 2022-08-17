@@ -15,6 +15,9 @@ In the first part of the project we recreated these functions
 | FUNCTION NAME  | PROTOTYPE | DESCRIPTION | 
 | -------------- | --------- | ----------- |
 | [**ft\_atoi**](https://github.com/vtrevisa/Libft/blob/master/Src/ft_atoi.c) | ```int ft_atoi(const char *str);``` | converts the initial numbers of the string (ignoring isspace) pointed to by **str** to int and returns it. |
+| [**ft\_bzero**](https://github.com/vtrevisa/Libft/blob/master/Src/ft_bzero.c) | ```void	ft_bzero(void *s, size_t n);``` | overwrite **n** bytes of the memory pointed by **s** with zeros ('\0').|
+
+
 | [**ft\_isalpha**](https://github.com/vtrevisa/Libft/blob/master/Src/ft_isalpha.c) || checks for an alphabetic character.|
 | [**ft\_isdigit**](https://github.com/vtrevisa/Libft/blob/master/Src/ft_isdigit.c) || checks for a digit (0 through 9).|
 | [**ft\_isalnum**](https://github.com/vtrevisa/Libft/blob/master/Src/ft_isalnum.c) || checks for an alphanumeric character; it  is  equivalent  to (isalpha(c) || isdigit(c)).|
@@ -23,7 +26,7 @@ In the first part of the project we recreated these functions
 | [**ft\_toupper**](https://github.com/vtrevisa/Libft/blob/master/Src/ft_toupper.c) || convert lowercase letters to uppercase|
 | [**ft\_tolower**](https://github.com/vtrevisa/Libft/blob/master/Src/ft_tolower.c) || convert uppercase letters to lowercase. |
 | [**ft\_memset**](https://github.com/vtrevisa/Libft/blob/master/Src/ft_memset.c) || fills the first n bytes of the memory area pointed to by s with the constant byte c|
-| [**ft\_bzero**](https://github.com/vtrevisa/Libft/blob/master/Src/ft_bzero.c) || erases the data in the n bytes of the memory starting at the location pointed to by s, by writing zeros (bytes containing '\0') to that area.|
+
 | [**ft\_memcpy**](https://github.com/vtrevisa/Libft/blob/master/Src/ft_memcpy.c) || copies n bytes from memory area src to memory area dest.  The memory areas must not overlap.  Use  memmove(3)  if the memory areas do overlap.
 | [**ft\_memccpy**](https://github.com/vtrevisa/Libft/blob/master/Src/ft_memccpy.c) || copies no more than n bytes from memory area src to memory area dest, stopping when the character c is found. If the memory areas overlap, the results are undefined.|
 | [**ft\_memmove**](https://github.com/vtrevisa/Libft/blob/master/Src/ft_memmove.c) || copies n bytes from memory area src to memory area dest. The two strings may overlap; the copy is always done in a non-destructive manner.|
