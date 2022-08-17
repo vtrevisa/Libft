@@ -5,6 +5,7 @@
 * [Introduction](#introduction)
 * [Part 1](#part-1---libc-functions)
 * [Part 2](#part-2---additional-functions)
+* [Bonus Part](#bonus-part)
 
 # INTRODUCTION
 
@@ -55,4 +56,25 @@ In the first part of the project we recreated these functions
 | [**ft\_strtrim**](https://github.com/vtrevisa/Libft/blob/master/Src/ft_strtrim.c) | ```char	*ft_strtrim(char const *s1, char const *set);``` | Mallocs and returns a copy of **s1** with the characters specified in **set** removed from the beginning and from the end of the string. |
 | [**ft\_substr**](https://github.com/vtrevisa/Libft/blob/master/Src/ft_substr.c) | ```char	*ft_substr(char const *s, unsigned int start, size_t len);``` | Mallocs and returns a substring, starting at the position **start** and has a max size of **len** bytes, from the string **s**. |
 
-***MORE INCOMING***
+# BONUS PART
+These functions are made to manipulate the following truct:
+```
+typedef struct s_list
+{
+	void			*content;
+	struct s_list	*next;
+}	t_list;
+```
+| FUNCTION NAME | PROTOTYPE | DECRIPTION |
+|---------------|-----------|------------|
+| [**ft\_lstnew**](https://github.com/vcwild/42-libft/tree/main/src/libft/ft_lstnew.c) |```t_list	*ft_lstnew(void *content);``` | Mallocs and returns a new element of the s_list. The variable **content** is initialized with the value of the parameter **content**. The variable **next** is initialized to NULL. |
+| [**ft\_lstadd_front**](https://github.com/vcwild/42-libft/tree/main/src/libft/ft_lstadd_front.c) | ```void	ft_lstadd_front(t_list **lst, t_list *new);``` | Adds the element **new** at the beginning of the list **lst**. |
+| [**ft\_lstsize**](https://github.com/vcwild/42-libft/tree/main/src/libft/ft_lstsize.c) | ```int		ft_lstsize(t_list *lst);``` | Counts the number of elements in the list **lst**. |
+| [**ft\_lstlast**](https://github.com/vcwild/42-libft/tree/main/src/libft/ft_lstlast.c) | ```t_list	*ft_lstlast(t_list *lst);``` | Returns the last element of the list **lst**. |
+| [**ft\_lstadd_back**](https://github.com/vcwild/42-libft/tree/main/src/libft/ft_lstadd_back.c) | ```void	ft_lstadd_back(t_list **lst, t_list *new);``` | Adds the element **new** at the end of the list **lst**. |
+| [**ft\_lstdelone**](https://github.com/vcwild/42-libft/tree/main/src/libft/ft_lstdelone.c) | ```void	ft_lstdelone(t_list *lst, void (*del)(void*));``` | Takes as a parameter an element of the list **lst** and frees the memory of the element’s content using the function **del** given as a parameter and free the element. |
+| [**ft\_lstclear**](https://github.com/vcwild/42-libft/tree/main/src/libft/ft_lstclear.c) | ```void	ft_lstclear(t_list **lst, void (*del)(void*));``` | Deletes and frees the given element of the list **lst** and every successor of that element, using the function **del**. The pointer to the list is set to NULL. |
+| [**ft\_lstiter**](https://github.com/vcwild/42-libft/tree/main/src/libft/ft_lstiter.c) | ```void	ft_lstiter(t_list *lst, void (*f)(void *));``` | Iterates the list **lst** and applies the function **f** to the content of each element.|
+| [**ft\_lstmap**](https://github.com/vcwild/42-libft/tree/main/src/libft/ft_lstmap.c) | ```t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));``` | Iterates the list **lst** and applies the function **f** to the content of each element. Creates a new list resulting of the successive applications of the function **f**. The **del** function is used to delete the content of an element if needed. |
+
+***Additional Functions Yet to Come***
