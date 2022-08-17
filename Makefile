@@ -1,30 +1,26 @@
 NAME	= libft.a
 
-SRC	= ft_atoi.c ft_bzero.c ft_calloc.c ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isdigit.c\
-	ft_isprint.c ft_itoa.c ft_memchr.c ft_memcmp.c ft_memcpy.c ft_memmove.c ft_memset.c ft_split.c\
-	ft_putchar_fd.c ft_putendl_fd.c ft_putnbr_fd.c ft_putstr_fd.c ft_strchr.c ft_strdup.c \
-	ft_striteri.c ft_strjoin.c ft_strlcat.c ft_strlcpy.c ft_strlen.c ft_strmapi.c ft_strncmp.c\
-	ft_strnstr.c ft_strrchr.c ft_strtrim.c ft_substr.c ft_tolower.c ft_toupper.c
-
-BONUS	= ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c ft_lstadd_back.c ft_lstdelone.c\
-	ft_lstclear.c ft_lstiter.c ft_lstmap.c
-
-OBJB	= $(BONUS:.c=.o)
+SRC	= ./Src/ft_atoi.c ./Src/ft_bzero.c ./Src/ft_calloc.c ./Src/ft_isalnum.c ./Src/ft_isalpha.c \
+	./Src/ft_isascii.c ./Src/ft_isdigit.c ./Src/ft_isprint.c ./Src/ft_itoa.c ./Src/ft_memchr.c \
+	./Src/ft_memcmp.c ./Src/ft_memcpy.c ./Src/ft_memmove.c ./Src/ft_memset.c ./Src/ft_split.c\
+	./Src/ft_putchar_fd.c ./Src/ft_putendl_fd.c ./Src/ft_putnbr_fd.c ./Src/ft_putstr_fd.c \
+	./Src/ft_strchr.c ./Src/ft_strdup.c ./Src/ft_striteri.c ./Src/ft_strjoin.c ./Src/ft_strlcat.c\
+	./Src/ft_strlcpy.c ./Src/ft_strlen.c ./Src/ft_strmapi.c ./Src/ft_strncmp.c ./Src/ft_strnstr.c \
+	./Src/ft_strrchr.c ./Src/ft_strtrim.c ./Src/ft_substr.c ./Src/ft_tolower.c ./Src/ft_toupper.c\
+	./Src/ft_lstnew.c ./Src/ft_lstadd_front.c ./Src/ft_lstsize.c ./Src/ft_lstlast.c \
+	./Src/ft_lstadd_back.c ./Src/ft_lstdelone.c ./Src/ft_lstclear.c ./Src/ft_lstiter.c ./Src/ft_lstmap.c
 
 OBJS	= $(SRC:.c=.o)
 
-CFLAGS	= -Wall -Wextra -Werror
+CFLAGS	= -Wall -Wextra -Werror -I./Include/
 
 all:	$(NAME)
 
 ${NAME}: $(OBJS)
 	ar -rcs $(NAME) $(OBJS)
-
-bonus:
-	@make OBJS="$(OBJS) $(OBJB)" all
-
+	@make clean
 clean:
-	rm -f ${OBJS} $(OBJB)
+	rm -f ${OBJS}
 
 fclean:	clean
 	rm -f ${NAME}
