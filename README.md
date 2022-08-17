@@ -11,6 +11,13 @@
 
 The LIBFT project consists in personal library in C that contains the functions that we will use along the course. We started with some basic functions and we will adding more functions as we built them. These functions must work a the originals besides the new ones.
 
+## HOW TO USE
+* Clone the repo ```git clone https://github.com/vtrevisa/Libft```
+* Enter the ***Libft*** directory
+* Run **make**
+* Include the header ```#include "<path>/libft/src/libft.h"``` in your file.c
+* Compile your file.c with ```<path>/libft/libft.a```
+
 # PART 1 - Libc Functions
 
 In the first part of the project we recreated these functions
