@@ -4,6 +4,7 @@
 **Table of Contents**
 * [Introduction](#introduction)
 * [Part 1](#part-1---libc-functions)
+* [Part 2](#part-2---additional-functions)
 
 # INTRODUCTION
 
@@ -37,5 +38,21 @@ In the first part of the project we recreated these functions
 | [**ft\_strrchr**](https://github.com/vtrevisa/Libft/blob/master/Src/ft_strrchr.c) | ```char	*ft_strrchr(const char *s, int c);``` | Search and returns a pointer to the last occurrence of the character **c** in the string **s**. |
 | [**ft\_tolower**](https://github.com/vtrevisa/Libft/blob/master/Src/ft_tolower.c) | ```int ft_tolower(int c);``` | Convert uppercase to lowercase. |
 | [**ft\_toupper**](https://github.com/vtrevisa/Libft/blob/master/Src/ft_toupper.c) | ```int ft_toupper(int c);``` | Convert lowercase to uppercase. |
+
+# PART 2 - Additional functions
+
+| FUNCTIONS NAME | PROTOTYPE | DESCRIPTION |
+| -------------- | --------- | ----------- |
+| [**ft\_itoa**](https://github.com/vtrevisa/Libft/blob/master/Src/ft_itoa.c) |```char	*ft_itoa(int n);``` | Mallocs and return in a string the integer **n**. Negative numbers are handled. |
+| [**ft\_putchar\_fd**](https://github.com/vtrevisa/Libft/blob/master/Src/ft_putchar_fd.c) | ```void	ft_putchar_fd(char c, int fd);``` | Outputs the character **c** to the file descriptor **fd**. |
+| [**ft\_putendl\_fd**](https://github.com/vtrevisa/Libft/blob/master/Src/ft_putendl_fd.c) | ```void	ft_putendl_fd(char *s, int fd);``` | Outputs the string **s** to the given file descriptor **fd** followed by a newline. |
+| [**ft\_putnbr\_fd**](https://github.com/vtrevisa/Libft/blob/master/Src/ft_putnbr_fd.c) | ```void	ft_putnbr_fd(int n, int fd);``` | Outputs the integer **n** to the given file descriptor **fd**. |
+| [**ft\_putstr\_fd**](https://github.com/vtrevisa/Libft/blob/master/Src/ft_putstr_fd.c) | ```void	ft_putstr_fd(char *s, int fd);``` | Outputs the string **s** to the given file descriptor **fd**. |
+| [**ft\_split**](https://github.com/vtrevisa/Libft/blob/master/Src/ft_split.c) | ```char	**ft_split(char const *s, char c);``` | Malloc and returns an array of strings obtained by splitting **s** using the character **c** as a delimiter.|
+| [**ft\ striteri**](https://github.com/vtrevisa/Libft/blob/master/Src/ft_striteri.c) | ```void	ft_striteri(char *s, void (*f)(unsigned int, char*));``` | Applies the function **f** on each character of the string **s**, passing its index as first argument and each character is passed by address to **f** to be modified if necessary. |
+| [**ft\_strjoin**](https://github.com/vtrevisa/Libft/blob/master/Src/libft/ft_strjoin.c) | ```char	*ft_strjoin(char const *s1, char const *s2);``` | Mallocs and returns a new string, which is the result of the concatenation of **s1** and **s2**. |
+| [**ft\_strmapi**](https://github.com/vtrevisa/Libft/blob/master/Src/ft_strmapi.c) | ```char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));``` | Applies the function **f** to each character of the string **s** to create a new string resulting from successive applications of **f**. |
+| [**ft\_strtrim**](https://github.com/vtrevisa/Libft/blob/master/Src/ft_strtrim.c) | ```char	*ft_strtrim(char const *s1, char const *set);``` | Mallocs and returns a copy of **s1** with the characters specified in **set** removed from the beginning and from the end of the string. |
+| [**ft\_substr**](https://github.com/vtrevisa/Libft/blob/master/Src/ft_substr.c) | ```char	*ft_substr(char const *s, unsigned int start, size_t len);``` | Mallocs and returns a substring, starting at the position **start** and has a max size of **len** bytes, from the string **s**. |
 
 ***MORE INCOMING***
