@@ -1,7 +1,7 @@
 [![libft](https://user-images.githubusercontent.com/102623863/185230931-b0ae9c6d-5329-40e2-9873-8da41a4ea032.png)](https://linktr.ee/vtrevisa)
 
 
-**Table of Contents**
+### **Table of Contents**
 * [Introduction](#introduction)
 * [Part 1](#part-1---libc-functions)
 * [Part 2](#part-2---additional-functions)
@@ -40,6 +40,8 @@ In the first part of the project we recreated these functions
 | [**ft\_tolower**](https://github.com/vtrevisa/Libft/blob/master/Src/ft_tolower.c) | ```int ft_tolower(int c);``` | Convert uppercase to lowercase. |
 | [**ft\_toupper**](https://github.com/vtrevisa/Libft/blob/master/Src/ft_toupper.c) | ```int ft_toupper(int c);``` | Convert lowercase to uppercase. |
 
+[To the top](#table-of-contents)
+
 # PART 2 - Additional functions
 
 | FUNCTIONS NAME | PROTOTYPE | DESCRIPTION |
@@ -55,6 +57,8 @@ In the first part of the project we recreated these functions
 | [**ft\_strmapi**](https://github.com/vtrevisa/Libft/blob/master/Src/ft_strmapi.c) | ```char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));``` | Applies the function **f** to each character of the string **s** to create a new string resulting from successive applications of **f**. |
 | [**ft\_strtrim**](https://github.com/vtrevisa/Libft/blob/master/Src/ft_strtrim.c) | ```char	*ft_strtrim(char const *s1, char const *set);``` | Mallocs and returns a copy of **s1** with the characters specified in **set** removed from the beginning and from the end of the string. |
 | [**ft\_substr**](https://github.com/vtrevisa/Libft/blob/master/Src/ft_substr.c) | ```char	*ft_substr(char const *s, unsigned int start, size_t len);``` | Mallocs and returns a substring, starting at the position **start** and has a max size of **len** bytes, from the string **s**. |
+
+[To the top](#table-of-contents)
 
 # BONUS PART
 These functions are made to manipulate the following truct:
@@ -76,5 +80,7 @@ typedef struct s_list
 | [**ft\_lstclear**](https://github.com/vcwild/42-libft/tree/main/src/libft/ft_lstclear.c) | ```void	ft_lstclear(t_list **lst, void (*del)(void*));``` | Deletes and frees the given element of the list **lst** and every successor of that element, using the function **del**. The pointer to the list is set to NULL. |
 | [**ft\_lstiter**](https://github.com/vcwild/42-libft/tree/main/src/libft/ft_lstiter.c) | ```void	ft_lstiter(t_list *lst, void (*f)(void *));``` | Iterates the list **lst** and applies the function **f** to the content of each element.|
 | [**ft\_lstmap**](https://github.com/vcwild/42-libft/tree/main/src/libft/ft_lstmap.c) | ```t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));``` | Iterates the list **lst** and applies the function **f** to the content of each element. Creates a new list resulting of the successive applications of the function **f**. The **del** function is used to delete the content of an element if needed. |
+
+[To the top](#table-of-contents)
 
 ***Additional Functions Yet to Come***
