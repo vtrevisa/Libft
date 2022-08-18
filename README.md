@@ -15,8 +15,8 @@ The LIBFT project consists in personal library in C that contains the functions 
 * Clone the repo ```git clone https://github.com/vtrevisa/Libft```
 * Enter the ***Libft*** directory
 * Run **make**
-* Include the header ```#include "<path>/libft/src/libft.h"``` in your file.c
-* Compile your file.c with ```<path>/libft/libft.a```
+* Include the header ```#include "<path>/Libft/Include/libft.h"``` in your file.c
+* Compile your file.c with ```<path>/Libft/libft.a```
 
 # PART 1 - Libc Functions
 
@@ -89,5 +89,10 @@ typedef struct s_list
 | [**ft\_lstmap**](https://github.com/vcwild/42-libft/tree/main/src/libft/ft_lstmap.c) | ```t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));``` | Iterates the list **lst** and applies the function **f** to the content of each element. Creates a new list resulting of the successive applications of the function **f**. The **del** function is used to delete the content of an element if needed. |
 
 [To the top](#table-of-contents)
+
+# GET NEXT LINE
+| FUNCTION NAME | PROTOTYPE | DESCRIPTION |
+| ------------- | --------- | ----------- |
+|[**Get_next_line**](https://github.com/vtrevisa/Libft/blob/master/Src/Get_next_line/get_next_line.c) | ```char	*get_next_line(int fd);``` | Reads one line at a time of the **fd** passed as parameter and prints it in the stdout. Consecutive calls of this function continues the read of the file line by line. |
 
 ***Additional Functions Yet to Come***
