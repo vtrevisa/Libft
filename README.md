@@ -6,6 +6,8 @@
 * [Part 1](#part-1---libc-functions)
 * [Part 2](#part-2---additional-functions)
 * [Bonus Part](#bonus-part)
+* [Get next line](#get-next-line)
+* [Ft_printf](#ft_printf)
 
 # INTRODUCTION
 
@@ -93,6 +95,15 @@ typedef struct s_list
 # GET NEXT LINE
 | FUNCTION NAME | PROTOTYPE | DESCRIPTION |
 | ------------- | --------- | ----------- |
-|[**Get_next_line**](https://github.com/vtrevisa/Libft/blob/master/Src/Get_next_line/get_next_line.c) | ```char	*get_next_line(int fd);``` | Reads one line at a time of the **fd** passed as parameter and prints it in the stdout. Consecutive calls of this function continues the read of the file line by line. |
+|[**Get_next_line**](https://github.com/vtrevisa/Libft/tree/master/Src/Get_next_line) | ```char	*get_next_line(int fd);``` | Reads one line at a time of the **fd** passed as parameter and prints it in the stdout. Consecutive calls of this function continues the read of the file line by line. |
+
+[To the top](#table-of-contents)
+
+# FT_PRINTF 
+| FUNCTION NAME | PROTOTYPE | DESCRIPTION |
+| ------------- | --------- | ----------- |
+|[**Ft_printf**](https://github.com/vtrevisa/Libft/tree/master/Src/Ft_printf) | ```ft_printf(const char *str, ...);``` | prints a string in the stdout overwriting the %(csidpuxX%) with the respective variable. %c prints a char, %s prints a string, %i and %d prints an int, %p prints the address of a pointer, %u prints an unsigned int, %x and %X prints an hexadecimal with lower and uppercase respectively and the %% prints a '%'. Returns a int that is equal to the amount of bytes that were printed in the screen. |
+
+[To the top](#table-of-contents)
 
 ***Additional Functions Yet to Come***
