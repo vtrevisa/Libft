@@ -11,7 +11,7 @@
 
 # INTRODUCTION
 
-The LIBFT project consists in personal library in C that contains the functions that we will use along the course. We started with some basic functions and we will adding more functions as we built them. These functions must work a the originals besides the new ones.
+The LIBFT project consists in creating a personal library in C that contains the functions that we will use along the course. I started with some basic functions and i will be adding more functions as i buid them. The recreated function need to work the same as the originals.
 
 ## HOW TO USE
 * Clone the repo ```git clone https://github.com/vtrevisa/Libft```
