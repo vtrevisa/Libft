@@ -8,6 +8,7 @@
 * [Bonus Part](#bonus-part)
 * [Get next line](#get-next-line)
 * [Ft_printf](#ft_printf)
+* [Ft_atof](#function-added-for-fractol)
 
 # INTRODUCTION
 
@@ -103,6 +104,13 @@ typedef struct s_list
 | FUNCTION NAME | PROTOTYPE | DESCRIPTION |
 | ------------- | --------- | ----------- |
 |[**Ft_printf**](https://github.com/vtrevisa/Libft/tree/master/Src/Ft_printf) | ```ft_printf(const char *str, ...);``` | prints a string in the stdout overwriting the %(csidpuxX%) with the respective variable. %c prints a char, %s prints a string, %i and %d prints an int, %p prints the address of a pointer, %u prints an unsigned int, %x and %X prints an hexadecimal with lower and uppercase respectively and the %% prints a '%'. Returns a int that is equal to the amount of bytes that were printed in the screen. |
+
+[To the top](#table-of-contents)
+
+# FUNCTION ADDED FOR FRACTOL
+| FUNCTION NAME | PROTOTYPE | DESCRIPTION |
+| ------------- | --------- | ----------- |
+|[**Ft_atof**](https://github.com/vtrevisa/Libft/tree/master/Src/Fractol) | ```ft_atof(const char *str);``` | Converts the initial numbers of the string (ignoring isspace) pointed to by **str** to double and returns it. |
 
 [To the top](#table-of-contents)
 
