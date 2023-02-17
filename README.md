@@ -9,6 +9,7 @@
 * [Get next line](#get-next-line)
 * [Ft_printf](#ft_printf)
 * [Ft_atof](#function-added-for-fractol)
+* [Ft_atoli](#function-added-for-push_swap)
 
 # INTRODUCTION
 
@@ -111,6 +112,12 @@ typedef struct s_list
 | FUNCTION NAME | PROTOTYPE | DESCRIPTION |
 | ------------- | --------- | ----------- |
 |[**Ft_atof**](https://github.com/vtrevisa/Libft/tree/master/Src/Fractol) | ```ft_atof(const char *str);``` | Converts the initial numbers of the string (ignoring isspace) pointed to by **str** to double and returns it. |
+
+# FUNCTION ADDED FOR PUSH_SWAP
+| FUNCTION NAME | PROTOTYPE | DESCRIPTION |
+| ------------- | --------- | ----------- |
+|[**Ft_atoli**](https://github.com/vtrevisa/Libft/tree/master/Src/Push_Swap) | ```ft_atoli(const char *str);``` | Converts the initial numbers of the string (ignoring isspace) pointed to by **str** to long int and returns it. |
+
 
 [To the top](#table-of-contents)
 
